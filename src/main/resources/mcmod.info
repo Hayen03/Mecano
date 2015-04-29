@@ -1,0 +1,21 @@
+[
+{
+  "modid": "Mecano",
+  "name": "Mecano",
+  "description": "A tech mod about mechanism and engineering. Based on a no-grinding and no-gui philosophy",
+  "version": "0.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "Hayen"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]
