@@ -6,17 +6,15 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import hayen.mecano.proxy.IProxy;
+import hayen.mecano.reference.ModReference;
 
-/**
- * Created by Hayen on 2015-04-28.
- */
-@Mod(modid = "Mecano", name = "Mecano", version = "1.7.10-0.0")
+@Mod(modid = ModReference.MOD_ID, name = ModReference.MOD_NAME, version = ModReference.MOD_VERSION)
 public class Mecano {
 
-    @Mod.Instance("Mecano")
+    @Mod.Instance(ModReference.MOD_ID)
     public static Mecano instance;
 
-    @SidedProxy(clientSide = "hayen.mecano.proxy.ClientProxy", serverSide = "hayen.mecano.proxy.ServerProxy")
+    @SidedProxy(clientSide = ModReference.CLIENT_PROXY_CLASS, serverSide = ModReference.SERVER_PROXY_CLASS)
     public static IProxy proxy;
 
     @Mod.EventHandler
