@@ -10,10 +10,13 @@ import java.io.File;
 public class ConfigHandler {
 
 	public static Configuration configuration;
+//	public static boolean test = false;
 
 	public static void init(File config){
-		if (configuration == null)
+		if (configuration == null) {
 			configuration = new Configuration(config);
+			loadConfig();
+		}
 	}
 
 	@SubscribeEvent
@@ -25,7 +28,7 @@ public class ConfigHandler {
 
 	public static void loadConfig(){
 
-		// value to load
+//		test = configuration.get(Configuration.CATEGORY_GENERAL, "test", true).getBoolean();
 
 		if (configuration.hasChanged())
 			configuration.save();

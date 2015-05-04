@@ -6,4 +6,5 @@ public class ModReference {
 	public static final String MOD_VERSION = "1.7.10-0.0";
 	public static final String SERVER_PROXY_CLASS = "hayen.mecano.proxy.ServerProxy";
 	public static final String CLIENT_PROXY_CLASS = "hayen.mecano.proxy.ClientProxy";
+	public static final String GUI_FACTORY_CLASS = "hayen.mecano.client.gui.GUIFactory";
 }
